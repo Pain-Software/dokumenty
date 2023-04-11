@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.0.2/+esm'
+    </script>
+    <style>
+        article {
+            break-after: always;
+        }
+
+        section {
+            break-inside: avoid;
+        }
+    </style>
+    <style type="text/tailwindcss">
+        @layer components {
+        a {
+            @apply text-pink-700 underline cursor-pointer
+        }
+
+        p {
+            @apply text-justify
+        }
+
+        ul {
+            @apply list-disc ml-4 my-2
+        }
+
+        article {
+            @apply min-h-screen p-16 flex flex-col gap-4
+        }
+
+        dt {
+            @apply font-bold
+        }
+
+        dl {
+            @apply grid grid-cols-2 gap-y-4
+        }
+    }
+    </style>
+</head>
+
+<body class="p-0">
+
+    <section id="title"
+        class="px-16 py-8 min-h-screen bg-gradient-to-bl from-gray-700 via-gray-900 to-black text-white flex flex-col justify-between">
+        <div class="flex justify-between items-center">
+            <img src="logo.jpg" class="w-16 h-16 object-cover" alt="Painsoftware Logo" />
+            <h1>Pain Software</h1>
+        </div>
+
+        <div class="grid gap-y-12">
+            <h1 class="text-6xl leading-none font-bold">Název softwarového projektu</h1>
+            <h2 class="text-3xl tracking-wide">Dokument Specifikace Požadavků</h2>
+        </div>
+
+        <div class="inline-grid grid-cols-[min-content_auto] gap-x-2 text-neutral-400">
+            <div class="font-light text-right">Vypracoval</div>
+            <div class="">...</div>
+
+            <div class="font-light text-right">Zadavatel</div>
+            <div class="">...</div>
+
+            <div class="font-light text-right">Organizace</div>
+            <div class="">...</div>
+        </div>
+    </section>
+
+    <section class="min-h-screen bg-white"></section>
+
+    <article class="min-h-screen p-16 space-y-16">
+        <section>
+            <h1 id="abstract" class="text-4xl font-bold mb-4">Účel tohoto dokumentu</h1>
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illum excepturi eum aliquam commodi est optio adipisci alias atque, nam quisquam in cumque dicta ex, sunt dolorum repellendus. Assumenda, excepturi?</p>
+        </section>
+        <section>
+            <h1 id="popis_projektu" class="text-4xl font-bold mb-4">Rámcový popis projektu</h1>
+            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, recusandae, placeat tempora perferendis, repudiandae dicta delectus voluptatibus eaque quibusdam maiores consectetur? Doloribus nobis, magni aliquid odio consequatur fugit sit eum.</p>
+        </section>
+        <section>
+            <h1 id="reference" class="text-4xl font-bold mb-4">Reference</h1>
+            <div class="flex flex-col gap-4">
+                <div>
+                    <h2 class="font-black">RFC 2119</h2>
+                    <p class="text-justify">Klíčová slova "MUSÍ" (MUST, SHALL) či "POŽADOVANÝ" (REQUIRED), "NESMÍ" (MUST
+                        NOT, SHALL NOT), "MĚL BY" (SHOULD), "NEMĚL BY" (SHOULD NOT), "DOPORUČENÝ" (RECOMENDED), "SMÍ"
+                        (MAY) a "VOLITELNÝ" (OPTIONAL) jsou dále použity u zásad, omezení a u dobrých praxí v souladu s
+                        <a href="https://www.rfc-editor.org/rfc/rfc2119" target="_blank" rel="noreferrer">RFC 2119</a>
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="font-black">SemVer 2.0</h2>
+                    <p class="text-justify">Číslování verzí projektu se řídí specifikací sémantického verzování <a
+                            href="https://semver.org/spec/v2.0.0.html" target="_blank" rel="noreferrer">SemVer 2.0</a>.
+                        Číslo verze zapisujeme ve
+                        formátu MAJOR.MINOR.PATCH a navyšování jednotlivých čísel verzí probíhá následovně:</p>
+                    <ul>
+                        <li>MAJOR ― když nastala změna, která není zpětně kompatibilní s ostatními (API)</li>
+                        <li>MINOR ― když se přidá funkcionalita se zachováním zpětné kompatibility</li>
+                        <li>PATCH ― když se opravila chyba a zůstala kompatibilita</li>
+                    </ul>
+                    <p>
+                        Pomocí předběžných verzí a přidáváním metadat je možné upřesnit informace. Např.: 1.0.0-alfa,
+                        1.0.1-beta+2
+                    </p>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <article>
+        <h1 id="zkratky" class="text-4xl font-bold mb-4">Rejstřík použitých zkratek</h1>
+        <dl class="grid grid-cols-2">
+            <dt>Zkratka</dt>
+            <dd>Vysvětlení</dd>
+            <dt>Zkratka</dt>
+            <dd>Vysvětlení</dd>
+            <dt>Zkratka</dt>
+            <dd>Vysvětlení</dd>
+            <dt>Zkratka</dt>
+            <dd>Vysvětlení</dd>
+        </dl>
+    </article>
+
+    <article class="break-inside-avoid-page">
+        <h1 id="terminy" class="text-4xl font-bold mb-4">Rejstřík použitých termínů</h1>
+        <dl class="grid grid-cols-2">
+            <dt>Termín</dt>
+            <dd>Vysvětlení</dd>
+            <dt>Termín</dt>
+            <dd>Vysvětlení</dd>
+            <dt>Termín</dt>
+            <dd>Vysvětlení</dd>
+        </dl>
+    </article>
+
+    <article>
+        <h1 id="specifikace" class="text-4xl font-bold mb-4">Specifikace požadavků</h1>
+        <section class="grid gap-4 break-after">
+            <h2 class="text-2xl font-bold">Požadavky na obchodní logiku</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim non praesentium nostrum ut veniam unde, eveniet pariatur harum consequuntur aut, adipisci dolor magnam saepe impedit sint esse. Quo, iusto repellendus.</p>
+        </section>
+
+        <section class="flex flex-col gap-4">
+            <h2 class="text-2xl font-bold">Požadavky na architekturu softwaru</h2>
+            <div class="flex flex-col gap-4">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis quam sit quia cum ipsam omnis sed numquam, voluptatibus, quo provident nostrum minus deleniti distinctio, voluptas repellat ducimus doloremque doloribus ex!</p>
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-4">
+            <h2 class="text-2xl font-bold">Požadavky na kvalitu softwaru</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sint consequuntur numquam. Iusto voluptate et maiores dolore debitis, earum voluptas ipsum nobis aliquid delectus nulla odit dolorum reiciendis dolores quis!</p>
+        </section>
+    </article>
+
+    <article>
+        <h1 class="text-4xl font-bold">Rizika a omezení</h1>
+        <section>
+            <table class="min-w-full text-left text-sm">
+                <thead class="border-b font-medium dark:border-neutral-500">
+                    <tr>
+                        <th class="py-4 max-w-1/2">Riziko</th>
+                        <th class="py-4">Zdroj rizika</th>
+                        <th class="py-4">Možná mitigace</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b dark:border-neutral-500">
+                        <td class="py-4 pr-4 w-1/2">Riziko</td>
+                        <td class="py-4 pr-4">Zdroj</td>
+                        <td class="py-4 pr-4">Mitigace</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </article>
+    <article>
+        <h1 class="text-4xl font-bold">Časový odhad</h1>
+        <section>
+            <table class="min-w-full text-left text-sm">
+                <thead class="border-b font-medium dark:border-neutral-500">
+                    <tr>
+                        <th class="py-4 max-w-1/2">Etapa</th>
+                        <th class="py-4">Základní časový odhad</th>
+                        <th class="py-4">Rezerva</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b dark:border-neutral-500">
+                        <td class="py-4 pr-4 w-1/2">Činnost</td>
+                        <td class="py-4 pr-4">Čas</td>
+                        <td class="py-4 pr-4">+ Rezerva</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </article>
+    <article>
+        <section class="flex flex-col gap-4">
+            <h1 class="text-4xl font-bold">Technické a technologické řešení projektu</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas, facilis blanditiis maiores dolorem nesciunt eius officiis. Nulla hic iusto quis natus dolorem placeat, facere autem, id magnam explicabo similique?
+            </p>
+        </section>
+    </article>
+
+    <article>
+        <section class="flex flex-col gap-4">
+            <h1 class="text-4xl font-bold">Závěrečná ustanovení</h1>
+            <p>Zhotovitel se zavazuje, že si je plně vědom rozsahu a účelu řešení, jeho budoucím užití a že má k
+                dispozici pracovní sílu, finanční prostředky, know-how a zkušenosti nezbytné k řádnému zhotovení řešení.
+                Zhotovení probíhá na vlastní nebezpeční a vlastní odpovědnost zhotovitele.</p>
+            <p>
+                Zadavatel se níže přiloženým podpisem zavazuje, že se plně seznámil s obsahem DSP, a obsahuje podle jeho
+                názoru všechny informace, které dovolí zhotoviteli řešení řádně vypracovat. Zadavatel se také zavazuje
+                odpovídat na doplňující dotazy zhotovitele, pokud to neporuší jiná smluvní ujednání, kterými je
+                zadavatel vázán.
+            </p>
+            <p>Zadavatel má právo průběžně kontrolovat průběh vývoje a přikládat nesměrodatnou zpětnou vazbu. Zadavatel
+                má právo požadovat změny v průběhu vývoje, ovšem je v kompetenci zhotovitele tyto návrhy posoudit, zda
+                jsou providitelné v souladu s rozpočtem a časovým harmonogramem projektu.</p>
+            <p>V případě porušení těchto ustanovení, a ustanovení dále specifikovaných ve smlouvě o dílo, jejíchž
+                součástí je i tento dokument, vzniká právo nepronivší straně smlouvu vypovědět. Proces výpovědi je
+                stanoven podrobnější ve smlouvě o dílo.</p>
+        </section>
+
+        <section class="mt-auto flex justify-between">
+            <div class="flex flex-col gap-4">
+                <hr class="w-64 border-neutral-500 h-1" />
+                <div class="grid">
+                    <span></span>
+                    <span>(jednatel)</span>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <hr class="w-64 border-neutral-500 h-1" />
+                <div class="grid">
+                    <span></span>
+                    <span>(zadavatel)</span>
+                </div>
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>
