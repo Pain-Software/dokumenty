@@ -58,19 +58,19 @@
         </div>
 
         <div class="grid gap-y-12">
-            <h1 class="text-6xl leading-none font-bold">Název softwarového projektu</h1>
+            <h1 class="text-6xl leading-none font-bold">PainBank - i bolest můžete mít rádi</h1>
             <h2 class="text-3xl tracking-wide">Dokument Specifikace Požadavků</h2>
         </div>
 
         <div class="inline-grid grid-cols-[min-content_auto] gap-x-2 text-neutral-400">
             <div class="font-light text-right">Vypracoval</div>
-            <div class="">...</div>
+            <div class="">Pavel Vácha</div>
 
             <div class="font-light text-right">Zadavatel</div>
-            <div class="">...</div>
+            <div class="">Ing. Roman Špánek, Ph.D.</div>
 
             <div class="font-light text-right">Organizace</div>
-            <div class="">...</div>
+            <div class="">Pain Software</div>
         </div>
     </section>
 
@@ -79,11 +79,15 @@
     <article class="min-h-screen p-16 space-y-16">
         <section>
             <h1 id="abstract" class="text-4xl font-bold mb-4">Účel tohoto dokumentu</h1>
-            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illum excepturi eum aliquam commodi est optio adipisci alias atque, nam quisquam in cumque dicta ex, sunt dolorum repellendus. Assumenda, excepturi?</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illum excepturi eum
+                aliquam commodi est optio adipisci alias atque, nam quisquam in cumque dicta ex, sunt dolorum
+                repellendus. Assumenda, excepturi?</p>
         </section>
         <section>
             <h1 id="popis_projektu" class="text-4xl font-bold mb-4">Rámcový popis projektu</h1>
-            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, recusandae, placeat tempora perferendis, repudiandae dicta delectus voluptatibus eaque quibusdam maiores consectetur? Doloribus nobis, magni aliquid odio consequatur fugit sit eum.</p>
+            <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, recusandae,
+                placeat tempora perferendis, repudiandae dicta delectus voluptatibus eaque quibusdam maiores
+                consectetur? Doloribus nobis, magni aliquid odio consequatur fugit sit eum.</p>
         </section>
         <section>
             <h1 id="reference" class="text-4xl font-bold mb-4">Reference</h1>
@@ -147,19 +151,25 @@
         <h1 id="specifikace" class="text-4xl font-bold mb-4">Specifikace požadavků</h1>
         <section class="grid gap-4 break-after">
             <h2 class="text-2xl font-bold">Požadavky na obchodní logiku</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim non praesentium nostrum ut veniam unde, eveniet pariatur harum consequuntur aut, adipisci dolor magnam saepe impedit sint esse. Quo, iusto repellendus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim non praesentium nostrum ut veniam unde,
+                eveniet pariatur harum consequuntur aut, adipisci dolor magnam saepe impedit sint esse. Quo, iusto
+                repellendus.</p>
         </section>
 
         <section class="flex flex-col gap-4">
             <h2 class="text-2xl font-bold">Požadavky na architekturu softwaru</h2>
             <div class="flex flex-col gap-4">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis quam sit quia cum ipsam omnis sed numquam, voluptatibus, quo provident nostrum minus deleniti distinctio, voluptas repellat ducimus doloremque doloribus ex!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis quam sit quia cum ipsam omnis sed
+                    numquam, voluptatibus, quo provident nostrum minus deleniti distinctio, voluptas repellat ducimus
+                    doloremque doloribus ex!</p>
             </div>
         </section>
 
         <section class="flex flex-col gap-4">
             <h2 class="text-2xl font-bold">Požadavky na kvalitu softwaru</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sint consequuntur numquam. Iusto voluptate et maiores dolore debitis, earum voluptas ipsum nobis aliquid delectus nulla odit dolorum reiciendis dolores quis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sint consequuntur numquam. Iusto voluptate
+                et maiores dolore debitis, earum voluptas ipsum nobis aliquid delectus nulla odit dolorum reiciendis
+                dolores quis!</p>
         </section>
     </article>
 
@@ -176,8 +186,23 @@
                 </thead>
                 <tbody>
                     <tr class="border-b dark:border-neutral-500">
-                        <td class="py-4 pr-4 w-1/2">Riziko</td>
-                        <td class="py-4 pr-4">Zdroj</td>
+                        <td class="py-4 pr-4 w-1/2">ČNB API změní formát dat (země|měna|množství|kód|kurz)</td>
+                        <td class="py-4 pr-4">ČNB</td>
+                        <td class="py-4 pr-4">Mitigace</td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                        <td class="py-4 pr-4 w-1/2">ČNB bude mít výpadek</td>
+                        <td class="py-4 pr-4">ČNB</td>
+                        <td class="py-4 pr-4">Mitigace</td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                        <td class="py-4 pr-4 w-1/2">SMTP je kokotina</td>
+                        <td class="py-4 pr-4">ČNB</td>
+                        <td class="py-4 pr-4">Mitigace</td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                        <td class="py-4 pr-4 w-1/2">E-Mail spadne do spamu</td>
+                        <td class="py-4 pr-4">ČNB</td>
                         <td class="py-4 pr-4">Mitigace</td>
                     </tr>
                 </tbody>
@@ -190,16 +215,51 @@
             <table class="min-w-full text-left text-sm">
                 <thead class="border-b font-medium dark:border-neutral-500">
                     <tr>
-                        <th class="py-4 max-w-1/2">Etapa</th>
+                        <th class="py-4 max-w-1/2">Činnost</th>
                         <th class="py-4">Základní časový odhad</th>
                         <th class="py-4">Rezerva</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="border-b dark:border-neutral-500">
-                        <td class="py-4 pr-4 w-1/2">Činnost</td>
-                        <td class="py-4 pr-4">Čas</td>
-                        <td class="py-4 pr-4">+ Rezerva</td>
+                        <td class="py-4 pr-4 w-1/2">Implementace dvoufázového ověření</td>
+                        <td class="py-4 pr-4">2h</td>
+                        <td class="py-4 pr-4">+ 1h</td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                        <td class="py-4 pr-4 w-1/2">Tvorba grafického podkladu</td>
+                        <td class="py-4 pr-4">4h</td>
+                        <td class="py-4 pr-4">+ 1h</td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                        <td class="py-4 pr-4 w-1/2">Implementace klientské části aplikace</td>
+                        <td class="py-4 pr-4">8h</td>
+                        <td class="py-4 pr-4">+ 2h</td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                        <td class="py-4 pr-4 w-1/2">Návrh architektury serverové části aplikace</td>
+                        <td class="py-4 pr-4">4h</td>
+                        <td class="py-4 pr-4">+ 1h</td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                        <td class="py-4 pr-4 w-1/2">Implementace serverové části aplikace</td>
+                        <td class="py-4 pr-4">8h</td>
+                        <td class="py-4 pr-4">+ 2h</td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                        <td class="py-4 pr-4 w-1/2">Tvorba testů pro serverovou část aplikace</td>
+                        <td class="py-4 pr-4">8h</td>
+                        <td class="py-4 pr-4">+ 1h</td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                        <td class="py-4 pr-4 w-1/2">Tvorba CI/CD pipeliny</td>
+                        <td class="py-4 pr-4">1h</td>
+                        <td class="py-4 pr-4">+ 1h</td>
+                    </tr>
+                    <tr class="border-b dark:border-neutral-500">
+                        <td class="py-4 pr-4 w-1/2">Zprovoznění a správa aplikačního serveru</td>
+                        <td class="py-4 pr-4">2h</td>
+                        <td class="py-4 pr-4">+ 1h</td>
                     </tr>
                 </tbody>
             </table>
@@ -209,7 +269,9 @@
         <section class="flex flex-col gap-4">
             <h1 class="text-4xl font-bold">Technické a technologické řešení projektu</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas, facilis blanditiis maiores dolorem nesciunt eius officiis. Nulla hic iusto quis natus dolorem placeat, facere autem, id magnam explicabo similique?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas, facilis blanditiis maiores dolorem
+                nesciunt eius officiis. Nulla hic iusto quis natus dolorem placeat, facere autem, id magnam explicabo
+                similique?
             </p>
         </section>
     </article>
@@ -239,14 +301,14 @@
                 <hr class="w-64 border-neutral-500 h-1" />
                 <div class="grid">
                     <span></span>
-                    <span>(jednatel)</span>
+                    <span>Pavel Vácha</span>
                 </div>
             </div>
             <div class="flex flex-col gap-4">
                 <hr class="w-64 border-neutral-500 h-1" />
                 <div class="grid">
                     <span></span>
-                    <span>(zadavatel)</span>
+                    <span>Ing. Roman Špánek, Ph.D.</span>
                 </div>
             </div>
         </section>
